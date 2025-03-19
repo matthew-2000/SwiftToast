@@ -1,7 +1,5 @@
 # SwiftToast
 
-![SwiftToast Logo](https://your-image-url.com) *(Optional: Add a project logo or screenshot)*
-
 ## 🚀 About SwiftToast
 **SwiftToast** is a lightweight and customizable SwiftUI library for displaying non-intrusive toast messages in your iOS/macOS applications. Designed for simplicity and flexibility, it allows you to show short notifications with custom styling and animations.
 
@@ -126,7 +124,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## 💡 Credits
-Developed by **Your Name** • [GitHub](https://github.com/your-username) • [Twitter](https://twitter.com/your-handle)
+Developed by **Matteo Ercolino** • [GitHub](https://github.com/matthew-2000)
 
 ---
 
