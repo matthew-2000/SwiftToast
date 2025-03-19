@@ -21,7 +21,7 @@
 2. Go to **File > Add Packages...**
 3. Enter the following URL:
    ```
-   https://github.com/your-username/SwiftToast.git
+   https://github.com/matthew-2000/SwiftToast.git
    ```
 4. Choose **Latest Version** and click **Add Package**.
 
