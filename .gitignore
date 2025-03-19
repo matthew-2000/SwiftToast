@@ -1,8 +1,22 @@
+# Xcode e macOS
 .DS_Store
-/.build
-/Packages
 xcuserdata/
+*.xcworkspace/
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcshareddata/
 DerivedData/
-.swiftpm/configuration/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
-.netrc
+build/
+*.pbxproj
+
+# Swift Package Manager
+/.swiftpm/
+/.build/
+/Packages/
+/SourcePackages/
+
+# Logs & Metadata
+*.log
+*.lock
+*.xcdebugger/
