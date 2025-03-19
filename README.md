@@ -1,5 +1,7 @@
 # SwiftToast
 
+[![Swift Package Index](https://swiftpackageindex.com/matthew-2000/SwiftToast/badge.svg)](https://swiftpackageindex.com/matthew-2000/SwiftToast)
+
 ## 🚀 About SwiftToast
 **SwiftToast** is a lightweight and customizable SwiftUI library for displaying non-intrusive toast messages in your iOS/macOS applications. Designed for simplicity and flexibility, it allows you to show short notifications with custom styling and animations.
 
@@ -19,7 +21,7 @@
 2. Go to **File > Add Packages...**
 3. Enter the following URL:
    ```
-   https://github.com/your-username/SwiftToast.git
+   https://github.com/matthew-2000/SwiftToast.git
    ```
 4. Choose **Latest Version** and click **Add Package**.
 
