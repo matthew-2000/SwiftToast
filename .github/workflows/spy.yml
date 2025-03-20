@@ -10,13 +10,30 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: macos-latest
+  run-tests:
+    runs-on: macos-latest  # Usa macOS per eseguire Swift e i test
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Swift
+      - name: Checkout Repository
+        uses: actions/checkout@v4  # Clona il repository
+
+      - name: Set Up Latest Swift
         uses: swift-actions/setup-swift@v2
         with:
-          swift-version: '6.0'
-      - name: Build and test
-        run: swift test
+          swift-version: "6.0.2"  # ✅ Specifica una versione stabile
+
+      - name: Get Swift Version
+        run: swift --version  # ✅ Controlla la versione di Swift installata
+
+      - name: Get Swift Tools Version
+        run: swift package tools-version  # ✅ Controlla la versione degli strumenti Swift
+
+      - name: Run macOS Tests
+        run: swift test  # ✅ Test su macOS
+
+      - name: Run iOS Tests
+        run: |
+          xcodebuild test \
+          -scheme SwiftToast \
+          -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest' \
+          | xcpretty
