@@ -7,7 +7,6 @@ let package = Package(
     name: "SwiftToast",
     platforms: [
         .iOS(.v13),  // Aggiungere questa riga
-        .macOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -24,6 +23,5 @@ let package = Package(
             name: "SwiftToastTests",
             dependencies: ["SwiftToast"]
         ),
-    ],
-    swiftLanguageModes: [.v5]
+    ]
 )
