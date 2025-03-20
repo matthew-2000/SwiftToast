@@ -24,5 +24,6 @@ let package = Package(
             name: "SwiftToastTests",
             dependencies: ["SwiftToast"]
         ),
-    ]
+    ],
+    swiftLanguageModes: [.version("6"), .v5]
 )

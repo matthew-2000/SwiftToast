@@ -121,23 +121,3 @@ public extension View {
         }
     }
 }
-
-#Preview {
-    struct PreviewWrapper: View {
-        @State private var showToast = true
-        
-        var body: some View {
-            VStack {
-                Button("Mostra Toast") {
-                    showToast = true
-                }
-            }
-            .toast(
-                isPresented: $showToast,
-                message: "Messaggio di Toast"
-            )
-        }
-    }
-    
-    return PreviewWrapper()
-}
