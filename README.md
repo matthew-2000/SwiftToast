@@ -1,6 +1,5 @@
 # SwiftToast
 
-[![Build Status](https://github.com/matthew-2000/SwiftToast/actions/workflows/spi.yml/badge.svg)](https://github.com/matthew-2000/SwiftToast/actions)
 ![Swift 6](https://img.shields.io/badge/swift-6-ED523F.svg?logo=swift&style=flat)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/matthew-2000/SwiftToast.svg)](https://github.com/matthew-2000/SwiftToast/releases)
