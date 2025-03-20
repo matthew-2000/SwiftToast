@@ -80,9 +80,7 @@ public struct ToastView: View {
                             opacity = 0
                             offsetY = 100
                         }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                            isPresented = false  // 🔥 Ora si chiude correttamente!
-                        }
+                        startDismissTimer()
                     }
                 }
             
@@ -91,6 +89,13 @@ public struct ToastView: View {
         .frame(maxWidth: .infinity)
         .padding(.vertical, 50)
     }
+    
+    func startDismissTimer() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+            isPresented = false
+        }
+    }
+
 }
 
 public extension View {

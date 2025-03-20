@@ -34,11 +34,7 @@ final class SwiftToastTests: XCTestCase {
             isPresented: showToast
         )
 
-        // Forziamo SwiftUI a renderizzare e attivare onAppear
-        let hostingController = UIHostingController(rootView: toast)
-        let window = UIWindow()
-        window.rootViewController = hostingController
-        window.makeKeyAndVisible()
+        toast.startDismissTimer()
 
         // Aspettiamo fino alla fine del timeout
         wait(for: [expectation], timeout: 3)
