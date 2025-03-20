@@ -14,10 +14,13 @@ jobs:
       - name: Check out the code
         uses: actions/checkout@v3  # Clona il repository
 
-      - name: Install Swift 6
+            - name: Install Swift 6
         uses: swift-actions/setup-swift@v2
         with:
-          swift-version: "6.0.2"  # Specifica Swift 6 (controlla la versione più recente disponibile)
+          swift-version: "6.0.2"  # Installa Swift 6.0.2
+
+      - name: Force Swift 6
+        run: echo "export TOOLCHAINS=swift" >> $GITHUB_ENV  # Imposta Swift 6 come predefinito
 
       - name: Set Up Latest Xcode
         run: sudo xcode-select -s /Applications/Xcode_15.4.app  # Usa Xcode 15.4
