@@ -9,7 +9,6 @@ on:
 jobs:
   build-and-test:
     runs-on: macos-latest
-
     steps:
       - name: Check out the code
         uses: actions/checkout@v3

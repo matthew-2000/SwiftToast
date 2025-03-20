@@ -1,6 +1,6 @@
 # SwiftToast
 
-![Swift 6](https://img.shields.io/badge/swift-6-ED523F.svg?logo=swift&style=flat)
+![Swift 5.8](https://img.shields.io/badge/swift-5.8-ED523F.svg?logo=swift&style=flat)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/matthew-2000/SwiftToast.svg)](https://github.com/matthew-2000/SwiftToast/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/matthew-2000/SwiftToast/pulls)
