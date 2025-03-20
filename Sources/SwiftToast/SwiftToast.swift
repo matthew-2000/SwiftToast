@@ -99,6 +99,7 @@ public struct ToastView: View {
 
 }
 
+@MainActor
 public extension View {
     func toast(
         isPresented: Binding<Bool>,
