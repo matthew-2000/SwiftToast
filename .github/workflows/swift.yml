@@ -19,17 +19,17 @@ jobs:
         with:
           swift-version: "6.0.2"  # Installa Swift 6.0.2
 
-      - name: Force Swift 6
-        run: echo "export TOOLCHAINS=swift" >> $GITHUB_ENV  # Imposta Swift 6 come predefinito
-
       - name: Set Up Latest Xcode
         run: sudo xcode-select -s /Applications/Xcode_15.4.app  # Usa Xcode 15.4
 
-      - name: Get Swift Version
-        run: swift --version  # Debugging: verifica che Swift 6 sia installato
+      - name: Verify Swift Version
+        run: swift --version  # Debugging: verifica che Swift 6 sia attivo
 
-      - name: Get Xcode Version
+      - name: Verify Xcode Version
         run: xcodebuild -version  # Debugging: verifica la versione di Xcode
+
+      - name: Force Swift 6 for Xcode
+        run: echo "TOOLCHAINS=com.apple.dt.toolchain.Swift_6_0" >> $GITHUB_ENV  # 🔥 Forza Swift 6 in Xcode
 
       - name: Resolve Swift Package Dependencies
         run: swift package resolve  # Risolve le dipendenze del pacchetto
