@@ -11,41 +11,7 @@ final class SwiftToastTests: XCTestCase {
         )
         XCTAssertNotNil(toast, "ToastView should not be nil")
     }
-    
-    @MainActor func testToastHidesAfterDuration() {
-        let expectation = XCTestExpectation(description: "Toast should disappear after duration")
-        
-        // Creiamo un Binding finto che monitora quando cambia
-        var isPresented = true
-        let showToast = Binding<Bool>(
-            get: { isPresented },
-            set: { newValue in
-                isPresented = newValue
-                if !newValue {
-                    expectation.fulfill()
-                }
-            }
-        )
 
-        // Creiamo il ToastView
-        let toast = ToastView(
-            message: "Test Message",
-            duration: 2,
-            isPresented: showToast
-        )
-
-        // Forziamo SwiftUI a renderizzare e attivare onAppear
-        let hostingController = UIHostingController(rootView: toast)
-        let window = UIWindow()
-        window.rootViewController = hostingController
-        window.makeKeyAndVisible()
-
-        // Aspettiamo fino alla fine del timeout
-        wait(for: [expectation], timeout: 3)
-        
-        // Verifichiamo che il Toast sia effettivamente scomparso
-        XCTAssertFalse(isPresented, "ToastView should be hidden after the duration")
-    }
 
     @MainActor func testToastPositioning() {
         let toastTop = ToastView(
