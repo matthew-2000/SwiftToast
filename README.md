@@ -1,6 +1,11 @@
 # SwiftToast
 
+[![Build Status](https://github.com/matthew-2000/SwiftToast/actions/workflows/spi.yml/badge.svg)](https://github.com/matthew-2000/SwiftToast/actions)
 [![Swift Package Index](https://swiftpackageindex.com/matthew-2000/SwiftToast/badge.svg)](https://swiftpackageindex.com/matthew-2000/SwiftToast)
+![Swift 6](https://img.shields.io/badge/swift-5.9-ED523F.svg?logo=swift&style=flat)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/matthew-2000/SwiftToast.svg)](https://github.com/matthew-2000/SwiftToast/releases)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/matthew-2000/SwiftToast/pulls)
 
 ## 🚀 About SwiftToast
 **SwiftToast** is a lightweight and customizable SwiftUI library for displaying non-intrusive toast messages in your iOS/macOS applications. Designed for simplicity and flexibility, it allows you to show short notifications with custom styling and animations.

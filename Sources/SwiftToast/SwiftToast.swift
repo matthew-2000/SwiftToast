@@ -19,6 +19,7 @@ public enum ToastAnimationStyle {
     }
 }
 
+@MainActor
 public struct ToastView: View {
     let message: String
     let duration: TimeInterval
